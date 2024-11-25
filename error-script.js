@@ -1,2 +1,5 @@
-console.log('This script will throw an error...');
-throw new Error('Test error: This is a deliberately thrown error for testing purposes.');
+console.log('This script will throw an error after 1 minute...');
+
+setTimeout(() => {
+  throw new Error('Simulated error: Script execution failed!');
+}, 60000);
